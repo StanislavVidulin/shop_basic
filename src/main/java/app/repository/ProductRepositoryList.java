@@ -7,7 +7,12 @@ import java.util.List;
 
 public class ProductRepositoryList implements ProductRepository {
 
+    // Этот лист является имитацией базы данных.
+    // Здесь хранятся все продукты, которые имеются в нашем магазине.
     private List<Product> database = new ArrayList<>();
+
+    // Это поле отслеживает, какой идентификатор был назначен
+    // последнему сохраняемому продукту
     private long currentId = 0;
 
 
