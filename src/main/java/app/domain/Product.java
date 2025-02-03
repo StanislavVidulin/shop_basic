@@ -22,6 +22,10 @@ public class Product {
         this.id = id;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
     public double getPrice() {
         return price;
     }
@@ -32,6 +36,10 @@ public class Product {
 
     public boolean isActive() {
         return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
     }
 
     @Override
