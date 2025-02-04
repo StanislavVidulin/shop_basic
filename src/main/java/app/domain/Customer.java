@@ -29,6 +29,14 @@ public class Customer {
         this.name = name;
     }
 
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
+    }
+
     public void addProduct(Product product) {
         if(product.isActive()) {
             products.add(product);
